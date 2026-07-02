@@ -43,6 +43,8 @@ Tournament operations will be considered successful if the system:
 
 If you want to look around the **public version** of the website, head to https://ng-tournies.onrender.com/. However, since this version is hooked up to a live database with real integration with the enterprise, you will be unable to access admin accounts or tournament editing features.
 
+**PLEASE NOTE**: This application is no longer used due to the [server closure](https://ngmc.co/closure) on the 28th of June, 2026. Some feature may no longer work after the 25th of July, 2026, due to the removal of the API. This project will no longer be maintained.
+
 If you want to test out the full functionality of the website, you can run a local version on your machine by following the instructions below.
 
 ## Requirements
@@ -139,7 +141,7 @@ As a result, if you want to test the application while not being registered to t
 
 Since your instance of the application is separate from the live version, using the `MegaRabyteYT` account for testing will not affect the live platform or its data. You can safely use this account to explore and test the features of the application without any impact on the actual operations of NetherGames.
 
-Please note that this method may not work after the 28th of June, 2026, as the API structure detailing staff and rank status may change after the closure of NetherGames.
+Please note that this method will not work after the 25th of July, 2026, as the NetherGames API will be taken offline. No offline-ready version of this application will be supported.
 
 # Contact
 This project was developed for a school-based assessment task and is NOT an official product of NetherGames. If you are a server owner or staff member and are interested in having this service implemented for your own server, or if you have any questions about the project, feel free to contact me on Discord at [`megarabyte` (723100946296602674)](https://discord.com/users/723100946296602674).
