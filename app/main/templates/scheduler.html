@@ -44,16 +44,6 @@
         {{ tournament_item(previous_tournaments, "past") }}
     {% endif %}
 
-    {% if current_tournament %}
-        <h2 class="section-title">Current Tournament</h2>
-        {{ tournament_item([current_tournament], "current") }}
-    {% endif %}
-
-    {% if future_tournaments %}
-        <h2 class="section-title">Future Tournaments</h2>
-        {{ tournament_item(future_tournaments, "future") }}
-    {% endif %}
-
 </div>
 
 {% if current_user.is_authenticated %}

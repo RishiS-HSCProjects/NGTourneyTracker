@@ -223,7 +223,7 @@ def scheduler(open_add_modal=False):
     now = int(datetime.now(UTC).timestamp())
 
     # 1. Fetch Tournament Data
-    previous = Tournament.query.filter(Tournament.end_unix < now).order_by(Tournament.end_unix.desc()).limit(2).all() or []
+    previous = Tournament.query.filter(Tournament.end_unix < now).order_by(Tournament.end_unix.desc()).all() or []
 
     kwargs.update({
         'previous_tournaments': list(reversed(previous)),
