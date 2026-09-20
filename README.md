@@ -43,7 +43,8 @@ Tournament operations will be considered successful if the system:
 
 If you want to look around the **public version** of the website, head to https://ng-tournies.onrender.com/. However, since this version is hooked up to a live database with real integration with the enterprise, you will be unable to access admin accounts or tournament editing features.
 
-**PLEASE NOTE**: This application is no longer used due to the [server closure](https://ngmc.co/closure) on the 28th of June, 2026. Some feature may no longer work after the 25th of July, 2026, due to the removal of the API. This project will no longer be maintained.
+**PLEASE NOTE**: This application is no longer used due to the [server closure](https://ngmc.co/closure) on the 28th of June, 2026. The public version of the website (previously at `https://ng-tournies.onrender.com/`) was permanently taken offline on the 20th of September, 2026, however, there is a [waybackmachine image of the website available here](https://web.archive.org/web/20260919165839/https://ng-tournies.onrender.com/).
+Some feature may no longer work after the 25th of July, 2026, due to the removal of the NetherGames API. This project will no longer be maintained. The author of this upholds no responsibility for any issues that arise from using this project, and urges users to use it at their own risk. The project is provided as-is for educational purposes only.
 
 If you want to test out the full functionality of the website, you can run a local version on your machine by following the instructions below.
 
@@ -67,8 +68,6 @@ If you want to test out the full functionality of the website, you can run a loc
 
 3. Create an `.env` file in the `app/` directory (find the `app/.env.example` file and remove the `.example` extension) and add the following content, replacing the placeholders with your actual values:
     ```
-    # Visit https://github.com/RishiS-HSCProjects/EnterpriseProject#setup-instructions for more setup instructions.
-
     # Create a random secret key for encrypting session data
     SECRET_KEY = abc123-def456-ghi789-jkl012
 
@@ -135,13 +134,13 @@ This service uses a whitelisting system to avoid unauthorised access to sensitiv
 After changing your role to Admin, you will have full access to the platform's features, including tournament management, announcements, and staff management. You will never need to manually edit the database again after this, as all necessary features for managing the platform are available through the web interface.
 
 ## Restrictions
-Please note that this application regularily checks the NetherGames API for tournament and player data. As a result, you will not be able to create a fake account, even if the `VERIFY_STAFF_STATUS` is set to False, without also creating a corresponding account on the NetherGames network that has logged in at least once between the 2018 and June 2026. This is because the application relies on the XUID, username, and staff status data from the NetherGames API to validate accounts and provide features such as tournament tracking and announcements, and an API check is run on account creation regardless of the `VERIFY_STAFF_STATUS` value.
+Please note that this application regularily checks the NetherGames API for tournament and player data. As a result, you will not be able to create a fake account, even if the `VERIFY_STAFF_STATUS` is set to False, without also creating a corresponding account on the NetherGames network that has logged in at least once between July 2018 to June 2026. This is because the application relies on the XUID, username, and staff status data from the NetherGames API to validate accounts and provide features such as tournament tracking and announcements, and an API check is run on account creation regardless of the `VERIFY_STAFF_STATUS` value.
 
 As a result, if you want to test the application while not being registered to the NetherGames network, you may use my profile [`MegaRabyteYT`](https://ngmc.co/p/MegaRabyteYT) for testing purposes, as it has a corresponding XUID and is eligible for access to the platform's features. You can register with the username `MegaRabyteYT` and follow the registration process to create an account linked to that profile. This will allow you to test the application's features without needing to create your own NetherGames account.
 
 Since your instance of the application is separate from the live version, using the `MegaRabyteYT` account for testing will not affect the live platform or its data. You can safely use this account to explore and test the features of the application without any impact on the actual operations of NetherGames.
 
-Please note that this method will not work after the 25th of July, 2026, as the NetherGames API will be taken offline. No offline-ready version of this application will be supported.
+Please note that this method will not work after the 25th of July, 2026, as the NetherGames API has been taken offline. No offline-ready version of this application will be supported.
 
 # Contact
 This project was developed for a school-based assessment task and is NOT an official product of NetherGames. If you are a server owner or staff member and are interested in having this service implemented for your own server, or if you have any questions about the project, feel free to contact me on Discord at [`megarabyte` (723100946296602674)](https://discord.com/users/723100946296602674).
