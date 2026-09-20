@@ -12,7 +12,6 @@
 }
 
 body {
-    padding-top: 1rem;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -28,27 +27,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-body #banner {
-    background-color: var(--primary-dark);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-
-    width: 100vw;
-    padding: 0.5rem 1rem;
-    text-align: left;
-
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: white;
-
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
 
 body.loaded {
     opacity: 1;
